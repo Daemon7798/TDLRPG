@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "949671904488",
+    "firebase_url": "https://tdlrpg-284f4.firebaseio.com",
+    "project_id": "tdlrpg-284f4",
+    "storage_bucket": "tdlrpg-284f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949671904488:android:3c5de6b5b44d4ae5",
+        "android_client_info": {
+          "package_name": "com.tdlrpg.osalem.tdlrpg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949671904488-g0nhn6hcrka34bfuakats0c4ulai747s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tdlrpg.osalem.tdlrpg",
+            "certificate_hash": "9c9fdc6cd6b4d548dbb22efc8f0e7013a086a206"
+          }
+        },
+        {
+          "client_id": "949671904488-kdf7jnpp5d49vm1krskpqf9v63mvvdjn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUbG2ZIyaMaucqn9g2ivciPVFFNTL6eC4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "949671904488-kdf7jnpp5d49vm1krskpqf9v63mvvdjn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Quests"
+        android:id="@+id/action_quests"
+        android:icon="@drawable/f245937607kmudsezjkwzrdhyuo6"
+        app:showAsAction="always"/>
+
+    <item android:title="Shop"
+        android:id="@+id/action_shop"
+        android:icon="@drawable/ic_shop"
+        app:showAsAction="always"/>
+
+    <item android:title="AddPlayer"
+        android:id="@+id/action_add"
+        android:icon="@drawable/ic_add_person"
+        app:showAsAction="always"/>
+</menu>

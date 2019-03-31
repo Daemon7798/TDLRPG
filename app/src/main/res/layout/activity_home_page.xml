@@ -4,15 +4,286 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_red_dark"
     tools:context=".HomePage">
 
-    <TextView
+    <GridLayout
+        android:id="@+id/Levels"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        android:columnCount="1"
+        android:rowCount="4">
+
+        <TextView
+            android:id="@+id/p1level"
+            android:layout_gravity="center"
+            android:paddingTop="55dp"
+            android:paddingBottom="55dp"
+            android:text="Level: "
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/p2level"
+            android:layout_gravity="center"
+            android:paddingTop="55dp"
+            android:paddingBottom="55dp"
+            android:text="Level: "
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/p3level"
+            android:layout_gravity="center"
+            android:paddingTop="55dp"
+            android:paddingBottom="55dp"
+            android:text="Level: "
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/p4level"
+            android:layout_gravity="center"
+            android:paddingTop="55dp"
+            android:paddingBottom="55dp"
+            android:text="Level: "
+            android:textSize="18sp"
+            android:visibility="invisible" />
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/Pics"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:columnCount="1"
+        android:rowCount="4"
+        app:layout_constraintLeft_toRightOf="@+id/Levels"
+        >
+
+        <ImageView
+            android:id="@+id/p1pic"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@android:color/transparent"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner"
+            app:srcCompat="@drawable/badprofilepic2768x768" />
+
+        <ImageView
+            android:id="@+id/p2pic"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@android:color/transparent"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner"
+            app:srcCompat="@drawable/badprofilepic2768x768" />
+
+        <ImageView
+            android:id="@+id/p3pic"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@android:color/transparent"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner"
+            app:srcCompat="@drawable/badprofilepic2768x768" />
+
+        <ImageView
+            android:id="@+id/p4pic"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@android:color/transparent"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner"
+            app:srcCompat="@drawable/badprofilepic2768x768" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/Info"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:rowCount="12"
+        app:layout_constraintLeft_toRightOf="@id/Pics">
+
+        <TextView
+            android:id="@+id/p1next"
+            android:text="Next:"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/p1exp"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/p1hp"
+            android:paddingTop="14dp"
+            android:text="Hp: "
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/p1hpbar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/p1sp"
+            android:paddingTop="12dp"
+            android:text="Sp: "
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/p1spbar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/p2next"
+            android:text="Next:"
+            android:textSize="14sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/p2exp"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/p2hp"
+            android:paddingTop="14dp"
+            android:text="Hp: "
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/p2hpbar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/p2sp"
+            android:paddingTop="12dp"
+            android:text="Sp: "
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/p2spbar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/p3next"
+            android:text="Next:"
+            android:textSize="14sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/p3exp"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/p3hp"
+            android:layout_height="21dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="30dp"
+            android:text="Hp: "
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/p3hpbar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/p3sp"
+            android:paddingTop="12dp"
+            android:text="Sp: "
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/p3spbar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/p4next"
+            android:text="Next:"
+            android:textSize="14sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/p4exp"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/p4hp"
+            android:paddingTop="14dp"
+            android:text="Hp: "
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/p4hpbar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/p4sp"
+            android:paddingTop="12dp"
+            android:text="Sp: "
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/p4spbar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:visibility="invisible" />
+
+    </GridLayout>
 
 </android.support.constraint.ConstraintLayout>
